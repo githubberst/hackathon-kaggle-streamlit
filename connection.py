@@ -3,12 +3,12 @@ import os
 import pandas as pd
 import zipfile
 import streamlit as st
-import json
+# import json
 
-class YourClass:
-    def __init__(self):
-        with open('secrets.json', 'r') as file:
-            self._secrets = json.load(file)
+# class YourClass:
+#     def __init__(self):
+#         with open('secrets.json', 'r') as file:
+#             self._secrets = json.load(file)
 
 class KaggleDatasetConnection(ExperimentalBaseConnection):
 
