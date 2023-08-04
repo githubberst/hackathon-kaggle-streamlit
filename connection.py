@@ -14,8 +14,8 @@ class KaggleDatasetConnection(ExperimentalBaseConnection):
 
     def _connect(self):
         # Set Kaggle credentials
-        os.environ['KAGGLE_USERNAME'] = self._secrets.KAGGLE_USERNAME
-        os.environ['KAGGLE_KEY'] = self.KAGGLE_KEY
+        os.environ['KAGGLE_USERNAME'] = st.secrets.KAGGLE_USERNAME
+        os.environ['KAGGLE_KEY'] = st.secrets.KAGGLE_KEY
 
         # importing here because it requires the credentials to be set
         from kaggle.api.kaggle_api_extended import KaggleApi
