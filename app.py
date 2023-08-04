@@ -12,4 +12,4 @@ conn = st.experimental_connection("kaggle_datasets", type=KaggleDatasetConnectio
 df = conn.get(path='thespacefreak/taylor-swift-spotify-data', filename='spotify_taylorswift.csv', ttl=3600)
 # file_object = conn.get(path='thespacefreak/taylor-swift-spotify-data', filename='spotify_taylorswift', ttl=3600)
 # df = pd.read_csv(file_object, encoding='latin-1') 
-display(df.head(10))
+st.dataframe(df)
